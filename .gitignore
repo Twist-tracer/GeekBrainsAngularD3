@@ -1,0 +1,7 @@
+# Ignore package managers folders
+/bower_components/
+/node_modules/
+/wwwroot/dist
+
+# Ignore extensions
+*.zip/
