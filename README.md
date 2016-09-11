@@ -1,2 +1,2 @@
-# My-Resume
-AngularJS+D3.js
+# AngularJS+D3.js
+Мои домашки по Angular и D3
