@@ -1,1 +1,56 @@
-<ui-view></ui-view>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Homeworks</a>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_1">Урок 1</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_2">Урок 2</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_3">Урок 3</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_4">Урок 4</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_5">Урок 5</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_6">Урок 6</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_7">Урок 7</a>
+				</li>
+				<li ui-sref-active="active">
+					<a ui-sref="root.lesson_8">Урок 8</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<ui-view></ui-view>
+		</div>
+	</div>
+
+	<hr>
+
+	<footer>
+		<p class="text-center">&copy; 2016 Богданов Семен Продакшен =).</p>
+	</footer>
+</div>
