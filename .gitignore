@@ -4,4 +4,4 @@
 /wwwroot/dist
 
 # Ignore extensions
-*.zip/
+*.zip
