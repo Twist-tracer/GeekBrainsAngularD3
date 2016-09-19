@@ -3,6 +3,7 @@ require('./css/styles.css');
 
 var rootTemplate = require('./view/root/root.html');
 var mainTemplate = require('./view/main/main.html');
+var lesson3Template = require('./view/lesson_3/lesson_3.html');
 
 (function (angular) {
     'use strict';
@@ -36,6 +37,11 @@ var mainTemplate = require('./view/main/main.html');
 						controller: 'main.controller',
 						url: '/lesson_2',
 						template: '<h1>Hello world!</h1>'
+					})
+					.state('root.lesson_3', {
+						controller: 'lesson_3.controller',
+						url: '/lesson_3',
+						template: lesson3Template
 					})
 
                 $urlRouterProvider.otherwise('/');

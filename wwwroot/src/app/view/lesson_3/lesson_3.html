@@ -1,0 +1,32 @@
+<button ng-click="generate($event)" class="btn btn-primary">Сгенерировать нового пользователя</button>
+
+<table ng-controller="lesson_3.controller" class="table">
+	<thead>
+		<tr>
+			<th>
+				ID
+			</th>
+			<th>
+				Имя
+			</th>
+			<th>
+				Возраст
+			</th>
+			<th>
+				Дата добавления
+			</th>
+			<th>
+				Действия
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in users | filter: { isActive: true }">
+			<td>{{user.id}}</td>
+			<td>{{user.name}}</td>
+			<td>{{user.age}}</td>
+			<td>{{user.dateAdded}}</td>
+			<td><button ng-click="remove($event, user.id)" class="btn btn-danger">Удалить</button></td>
+		</tr>
+	</tbody>
+</table>
