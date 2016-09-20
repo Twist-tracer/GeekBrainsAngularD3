@@ -66,7 +66,7 @@
 				
 				$scope.generate = function(e) {
 					users.push({
-						id: users.length,
+						id: users.length + 1,
 						name: names[getRandomInt(0, names.length)],
 						age: getRandomInt(0, 100),
 						isActive: true,
